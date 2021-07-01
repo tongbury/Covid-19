@@ -1,0 +1,969 @@
+2021-07-02 00:36:47,842:DEBUG:Updating table...
+2021-07-02 00:36:47,851:ERROR:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1079, in dispatch
+    response.set_data(func(*args, outputs_list=outputs_list))
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1020, in add_context
+    _validate.validate_multi_return(output_spec, output_value, callback_id)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\_validate.py", line 143, in validate_multi_return
+    ).format(callback_id, repr(output_value))
+dash.exceptions.InvalidCallbackReturnValue: The callback ..datatable1.selected_rows.. is a multi-output.
+Expected the output type to be a list or tuple but got:
+None.
+2021-07-02 00:36:47,859:DEBUG:Updating graph...
+2021-07-02 00:36:47,859:ERROR:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas\_libs\index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Country/Region'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1079, in dispatch
+    response.set_data(func(*args, outputs_list=outputs_list))
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1010, in add_context
+    output_value = func(*args, **kwargs)  # %% callback invoked %%
+  File "<ipython-input-92-234e42a52bd3>", line 285, in update_graph1
+    figure = generate_plot(i, dff['Country/Region'][derived_virtual_selected_rows].tolist(), slider_value)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\pandas\core\frame.py", line 2980, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas\_libs\index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Country/Region'
+2021-07-02 00:36:48,202:DEBUG:Updating graph...
+2021-07-02 00:36:48,292:DEBUG:Graph not updated...
+2021-07-02 00:36:48,298:DEBUG:Graph not updated...
+2021-07-02 00:36:51,301:DEBUG:Updating table...
+2021-07-02 00:36:51,310:ERROR:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1079, in dispatch
+    response.set_data(func(*args, outputs_list=outputs_list))
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1020, in add_context
+    _validate.validate_multi_return(output_spec, output_value, callback_id)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\_validate.py", line 143, in validate_multi_return
+    ).format(callback_id, repr(output_value))
+dash.exceptions.InvalidCallbackReturnValue: The callback ..datatable1.selected_rows.. is a multi-output.
+Expected the output type to be a list or tuple but got:
+None.
+2021-07-02 00:36:51,319:DEBUG:Updating graph...
+2021-07-02 00:36:51,320:ERROR:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas\_libs\index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Country/Region'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1079, in dispatch
+    response.set_data(func(*args, outputs_list=outputs_list))
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1010, in add_context
+    output_value = func(*args, **kwargs)  # %% callback invoked %%
+  File "<ipython-input-92-234e42a52bd3>", line 285, in update_graph1
+    figure = generate_plot(i, dff['Country/Region'][derived_virtual_selected_rows].tolist(), slider_value)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\pandas\core\frame.py", line 2980, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas\_libs\index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Country/Region'
+2021-07-02 00:36:51,594:DEBUG:Updating graph...
+2021-07-02 00:36:51,680:DEBUG:Graph not updated...
+2021-07-02 00:36:51,687:DEBUG:Graph not updated...
+2021-07-02 00:36:52,310:DEBUG:Updating table...
+2021-07-02 00:36:52,319:ERROR:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1079, in dispatch
+    response.set_data(func(*args, outputs_list=outputs_list))
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1020, in add_context
+    _validate.validate_multi_return(output_spec, output_value, callback_id)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\_validate.py", line 143, in validate_multi_return
+    ).format(callback_id, repr(output_value))
+dash.exceptions.InvalidCallbackReturnValue: The callback ..datatable1.selected_rows.. is a multi-output.
+Expected the output type to be a list or tuple but got:
+None.
+2021-07-02 00:36:52,322:DEBUG:Updating graph...
+2021-07-02 00:36:52,323:ERROR:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas\_libs\index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Country/Region'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1079, in dispatch
+    response.set_data(func(*args, outputs_list=outputs_list))
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1010, in add_context
+    output_value = func(*args, **kwargs)  # %% callback invoked %%
+  File "<ipython-input-92-234e42a52bd3>", line 285, in update_graph1
+    figure = generate_plot(i, dff['Country/Region'][derived_virtual_selected_rows].tolist(), slider_value)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\pandas\core\frame.py", line 2980, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas\_libs\index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Country/Region'
+2021-07-02 00:36:52,754:DEBUG:Updating graph...
+2021-07-02 00:36:52,831:DEBUG:Graph not updated...
+2021-07-02 00:36:52,831:DEBUG:Graph not updated...
+2021-07-02 00:36:53,180:DEBUG:Updating table...
+2021-07-02 00:36:53,191:ERROR:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1079, in dispatch
+    response.set_data(func(*args, outputs_list=outputs_list))
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1020, in add_context
+    _validate.validate_multi_return(output_spec, output_value, callback_id)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\_validate.py", line 143, in validate_multi_return
+    ).format(callback_id, repr(output_value))
+dash.exceptions.InvalidCallbackReturnValue: The callback ..datatable1.selected_rows.. is a multi-output.
+Expected the output type to be a list or tuple but got:
+None.
+2021-07-02 00:36:53,201:DEBUG:Updating graph...
+2021-07-02 00:36:53,201:ERROR:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas\_libs\index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Country/Region'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1079, in dispatch
+    response.set_data(func(*args, outputs_list=outputs_list))
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1010, in add_context
+    output_value = func(*args, **kwargs)  # %% callback invoked %%
+  File "<ipython-input-92-234e42a52bd3>", line 285, in update_graph1
+    figure = generate_plot(i, dff['Country/Region'][derived_virtual_selected_rows].tolist(), slider_value)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\pandas\core\frame.py", line 2980, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas\_libs\index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Country/Region'
+2021-07-02 00:36:53,470:DEBUG:Updating graph...
+2021-07-02 00:36:53,560:DEBUG:Graph not updated...
+2021-07-02 00:36:53,566:DEBUG:Graph not updated...
+2021-07-02 00:36:53,975:DEBUG:Updating table...
+2021-07-02 00:36:53,984:ERROR:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1079, in dispatch
+    response.set_data(func(*args, outputs_list=outputs_list))
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1020, in add_context
+    _validate.validate_multi_return(output_spec, output_value, callback_id)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\_validate.py", line 143, in validate_multi_return
+    ).format(callback_id, repr(output_value))
+dash.exceptions.InvalidCallbackReturnValue: The callback ..datatable1.selected_rows.. is a multi-output.
+Expected the output type to be a list or tuple but got:
+None.
+2021-07-02 00:36:53,994:DEBUG:Updating graph...
+2021-07-02 00:36:53,994:ERROR:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas\_libs\index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Country/Region'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1079, in dispatch
+    response.set_data(func(*args, outputs_list=outputs_list))
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1010, in add_context
+    output_value = func(*args, **kwargs)  # %% callback invoked %%
+  File "<ipython-input-92-234e42a52bd3>", line 285, in update_graph1
+    figure = generate_plot(i, dff['Country/Region'][derived_virtual_selected_rows].tolist(), slider_value)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\pandas\core\frame.py", line 2980, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas\_libs\index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Country/Region'
+2021-07-02 00:36:54,317:DEBUG:Updating graph...
+2021-07-02 00:36:54,394:DEBUG:Graph not updated...
+2021-07-02 00:36:54,394:DEBUG:Graph not updated...
+2021-07-02 00:36:54,968:DEBUG:Updating table...
+2021-07-02 00:36:54,978:ERROR:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1079, in dispatch
+    response.set_data(func(*args, outputs_list=outputs_list))
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1020, in add_context
+    _validate.validate_multi_return(output_spec, output_value, callback_id)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\_validate.py", line 143, in validate_multi_return
+    ).format(callback_id, repr(output_value))
+dash.exceptions.InvalidCallbackReturnValue: The callback ..datatable1.selected_rows.. is a multi-output.
+Expected the output type to be a list or tuple but got:
+None.
+2021-07-02 00:36:54,984:DEBUG:Updating graph...
+2021-07-02 00:36:54,984:ERROR:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas\_libs\index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Country/Region'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1079, in dispatch
+    response.set_data(func(*args, outputs_list=outputs_list))
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1010, in add_context
+    output_value = func(*args, **kwargs)  # %% callback invoked %%
+  File "<ipython-input-92-234e42a52bd3>", line 285, in update_graph1
+    figure = generate_plot(i, dff['Country/Region'][derived_virtual_selected_rows].tolist(), slider_value)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\pandas\core\frame.py", line 2980, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas\_libs\index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Country/Region'
+2021-07-02 00:36:55,460:DEBUG:Updating graph...
+2021-07-02 00:36:55,549:DEBUG:Graph not updated...
+2021-07-02 00:36:55,549:DEBUG:Graph not updated...
+2021-07-02 00:36:56,408:DEBUG:Updating table...
+2021-07-02 00:36:56,417:ERROR:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1079, in dispatch
+    response.set_data(func(*args, outputs_list=outputs_list))
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1020, in add_context
+    _validate.validate_multi_return(output_spec, output_value, callback_id)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\_validate.py", line 143, in validate_multi_return
+    ).format(callback_id, repr(output_value))
+dash.exceptions.InvalidCallbackReturnValue: The callback ..datatable1.selected_rows.. is a multi-output.
+Expected the output type to be a list or tuple but got:
+None.
+2021-07-02 00:36:56,424:DEBUG:Updating graph...
+2021-07-02 00:36:56,424:ERROR:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas\_libs\index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Country/Region'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1079, in dispatch
+    response.set_data(func(*args, outputs_list=outputs_list))
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1010, in add_context
+    output_value = func(*args, **kwargs)  # %% callback invoked %%
+  File "<ipython-input-92-234e42a52bd3>", line 285, in update_graph1
+    figure = generate_plot(i, dff['Country/Region'][derived_virtual_selected_rows].tolist(), slider_value)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\pandas\core\frame.py", line 2980, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas\_libs\index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Country/Region'
+2021-07-02 00:36:56,718:DEBUG:Updating graph...
+2021-07-02 00:36:56,805:DEBUG:Graph not updated...
+2021-07-02 00:36:56,810:DEBUG:Graph not updated...
+2021-07-02 00:36:59,647:DEBUG:Updating table...
+2021-07-02 00:36:59,657:ERROR:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1079, in dispatch
+    response.set_data(func(*args, outputs_list=outputs_list))
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1020, in add_context
+    _validate.validate_multi_return(output_spec, output_value, callback_id)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\_validate.py", line 143, in validate_multi_return
+    ).format(callback_id, repr(output_value))
+dash.exceptions.InvalidCallbackReturnValue: The callback ..datatable1.selected_rows.. is a multi-output.
+Expected the output type to be a list or tuple but got:
+None.
+2021-07-02 00:36:59,663:DEBUG:Updating graph...
+2021-07-02 00:36:59,663:ERROR:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas\_libs\index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Country/Region'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1079, in dispatch
+    response.set_data(func(*args, outputs_list=outputs_list))
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1010, in add_context
+    output_value = func(*args, **kwargs)  # %% callback invoked %%
+  File "<ipython-input-92-234e42a52bd3>", line 285, in update_graph1
+    figure = generate_plot(i, dff['Country/Region'][derived_virtual_selected_rows].tolist(), slider_value)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\pandas\core\frame.py", line 2980, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas\_libs\index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Country/Region'
+2021-07-02 00:37:00,138:DEBUG:Updating graph...
+2021-07-02 00:37:00,234:DEBUG:Graph not updated...
+2021-07-02 00:37:00,240:DEBUG:Graph not updated...
+2021-07-02 00:37:02,194:DEBUG:Updating table...
+2021-07-02 00:37:02,204:ERROR:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1079, in dispatch
+    response.set_data(func(*args, outputs_list=outputs_list))
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1020, in add_context
+    _validate.validate_multi_return(output_spec, output_value, callback_id)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\_validate.py", line 143, in validate_multi_return
+    ).format(callback_id, repr(output_value))
+dash.exceptions.InvalidCallbackReturnValue: The callback ..datatable1.selected_rows.. is a multi-output.
+Expected the output type to be a list or tuple but got:
+None.
+2021-07-02 00:37:02,211:DEBUG:Updating graph...
+2021-07-02 00:37:02,211:ERROR:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas\_libs\index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Country/Region'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1079, in dispatch
+    response.set_data(func(*args, outputs_list=outputs_list))
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1010, in add_context
+    output_value = func(*args, **kwargs)  # %% callback invoked %%
+  File "<ipython-input-92-234e42a52bd3>", line 285, in update_graph1
+    figure = generate_plot(i, dff['Country/Region'][derived_virtual_selected_rows].tolist(), slider_value)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\pandas\core\frame.py", line 2980, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas\_libs\index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Country/Region'
+2021-07-02 00:37:02,682:DEBUG:Updating graph...
+2021-07-02 00:37:02,764:DEBUG:Graph not updated...
+2021-07-02 00:37:02,764:DEBUG:Graph not updated...
+2021-07-02 00:37:03,480:DEBUG:Updating table...
+2021-07-02 00:37:03,489:ERROR:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1079, in dispatch
+    response.set_data(func(*args, outputs_list=outputs_list))
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1020, in add_context
+    _validate.validate_multi_return(output_spec, output_value, callback_id)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\_validate.py", line 143, in validate_multi_return
+    ).format(callback_id, repr(output_value))
+dash.exceptions.InvalidCallbackReturnValue: The callback ..datatable1.selected_rows.. is a multi-output.
+Expected the output type to be a list or tuple but got:
+None.
+2021-07-02 00:37:03,495:DEBUG:Updating graph...
+2021-07-02 00:37:03,495:ERROR:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas\_libs\index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Country/Region'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1079, in dispatch
+    response.set_data(func(*args, outputs_list=outputs_list))
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1010, in add_context
+    output_value = func(*args, **kwargs)  # %% callback invoked %%
+  File "<ipython-input-92-234e42a52bd3>", line 285, in update_graph1
+    figure = generate_plot(i, dff['Country/Region'][derived_virtual_selected_rows].tolist(), slider_value)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\pandas\core\frame.py", line 2980, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas\_libs\index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Country/Region'
+2021-07-02 00:37:03,961:DEBUG:Updating graph...
+2021-07-02 00:37:04,065:DEBUG:Graph not updated...
+2021-07-02 00:37:04,065:DEBUG:Graph not updated...
+2021-07-02 00:37:04,494:DEBUG:Updating table...
+2021-07-02 00:37:04,505:ERROR:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1079, in dispatch
+    response.set_data(func(*args, outputs_list=outputs_list))
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1020, in add_context
+    _validate.validate_multi_return(output_spec, output_value, callback_id)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\_validate.py", line 143, in validate_multi_return
+    ).format(callback_id, repr(output_value))
+dash.exceptions.InvalidCallbackReturnValue: The callback ..datatable1.selected_rows.. is a multi-output.
+Expected the output type to be a list or tuple but got:
+None.
+2021-07-02 00:37:04,515:DEBUG:Updating graph...
+2021-07-02 00:37:04,515:ERROR:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas\_libs\index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Country/Region'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1079, in dispatch
+    response.set_data(func(*args, outputs_list=outputs_list))
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1010, in add_context
+    output_value = func(*args, **kwargs)  # %% callback invoked %%
+  File "<ipython-input-92-234e42a52bd3>", line 285, in update_graph1
+    figure = generate_plot(i, dff['Country/Region'][derived_virtual_selected_rows].tolist(), slider_value)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\pandas\core\frame.py", line 2980, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas\_libs\index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Country/Region'
+2021-07-02 00:37:04,923:DEBUG:Updating graph...
+2021-07-02 00:37:05,007:DEBUG:Graph not updated...
+2021-07-02 00:37:05,013:DEBUG:Graph not updated...
+2021-07-02 00:37:05,361:DEBUG:Updating table...
+2021-07-02 00:37:05,371:ERROR:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1079, in dispatch
+    response.set_data(func(*args, outputs_list=outputs_list))
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1020, in add_context
+    _validate.validate_multi_return(output_spec, output_value, callback_id)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\_validate.py", line 143, in validate_multi_return
+    ).format(callback_id, repr(output_value))
+dash.exceptions.InvalidCallbackReturnValue: The callback ..datatable1.selected_rows.. is a multi-output.
+Expected the output type to be a list or tuple but got:
+None.
+2021-07-02 00:37:05,376:DEBUG:Updating graph...
+2021-07-02 00:37:05,377:ERROR:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas\_libs\index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Country/Region'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1079, in dispatch
+    response.set_data(func(*args, outputs_list=outputs_list))
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1010, in add_context
+    output_value = func(*args, **kwargs)  # %% callback invoked %%
+  File "<ipython-input-92-234e42a52bd3>", line 285, in update_graph1
+    figure = generate_plot(i, dff['Country/Region'][derived_virtual_selected_rows].tolist(), slider_value)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\pandas\core\frame.py", line 2980, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas\_libs\index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Country/Region'
+2021-07-02 00:37:05,635:DEBUG:Updating graph...
+2021-07-02 00:37:05,730:DEBUG:Graph not updated...
+2021-07-02 00:37:05,737:DEBUG:Graph not updated...
+2021-07-02 00:37:06,261:DEBUG:Updating table...
+2021-07-02 00:37:06,273:ERROR:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1079, in dispatch
+    response.set_data(func(*args, outputs_list=outputs_list))
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1020, in add_context
+    _validate.validate_multi_return(output_spec, output_value, callback_id)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\_validate.py", line 143, in validate_multi_return
+    ).format(callback_id, repr(output_value))
+dash.exceptions.InvalidCallbackReturnValue: The callback ..datatable1.selected_rows.. is a multi-output.
+Expected the output type to be a list or tuple but got:
+None.
+2021-07-02 00:37:06,281:DEBUG:Updating graph...
+2021-07-02 00:37:06,281:ERROR:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas\_libs\index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Country/Region'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1079, in dispatch
+    response.set_data(func(*args, outputs_list=outputs_list))
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1010, in add_context
+    output_value = func(*args, **kwargs)  # %% callback invoked %%
+  File "<ipython-input-92-234e42a52bd3>", line 285, in update_graph1
+    figure = generate_plot(i, dff['Country/Region'][derived_virtual_selected_rows].tolist(), slider_value)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\pandas\core\frame.py", line 2980, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas\_libs\index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Country/Region'
+2021-07-02 00:37:06,708:DEBUG:Updating graph...
+2021-07-02 00:37:06,782:DEBUG:Graph not updated...
+2021-07-02 00:37:06,797:DEBUG:Graph not updated...
+2021-07-02 00:37:07,024:DEBUG:Updating table...
+2021-07-02 00:37:07,033:ERROR:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1079, in dispatch
+    response.set_data(func(*args, outputs_list=outputs_list))
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1020, in add_context
+    _validate.validate_multi_return(output_spec, output_value, callback_id)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\_validate.py", line 143, in validate_multi_return
+    ).format(callback_id, repr(output_value))
+dash.exceptions.InvalidCallbackReturnValue: The callback ..datatable1.selected_rows.. is a multi-output.
+Expected the output type to be a list or tuple but got:
+None.
+2021-07-02 00:37:07,035:DEBUG:Updating graph...
+2021-07-02 00:37:07,036:ERROR:Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas\_libs\index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Country/Region'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1079, in dispatch
+    response.set_data(func(*args, outputs_list=outputs_list))
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\dash\dash.py", line 1010, in add_context
+    output_value = func(*args, **kwargs)  # %% callback invoked %%
+  File "<ipython-input-92-234e42a52bd3>", line 285, in update_graph1
+    figure = generate_plot(i, dff['Country/Region'][derived_virtual_selected_rows].tolist(), slider_value)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\pandas\core\frame.py", line 2980, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\tosi0001\AppData\Local\Continuum\anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas\_libs\index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Country/Region'
+2021-07-02 00:37:07,286:DEBUG:Updating graph...
+2021-07-02 00:37:07,380:DEBUG:Graph not updated...
+2021-07-02 00:37:07,387:DEBUG:Graph not updated...
+2021-07-02 00:37:44,369:DEBUG:Updating graph...
+2021-07-02 00:37:44,454:DEBUG:Graph not updated...
+2021-07-02 00:37:44,461:DEBUG:Graph not updated...
+2021-07-02 00:37:56,182:DEBUG:Updating styles....
+2021-07-02 00:37:56,200:DEBUG:Updating graph...
+2021-07-02 00:37:56,281:DEBUG:Graph not updated...
+2021-07-02 00:37:56,297:DEBUG:Graph not updated...
+2021-07-02 00:37:58,324:DEBUG:Updating styles....
+2021-07-02 00:37:58,340:DEBUG:Updating graph...
+2021-07-02 00:37:58,414:DEBUG:Graph not updated...
+2021-07-02 00:37:58,430:DEBUG:Graph not updated...
+2021-07-02 00:38:08,116:DEBUG:Updating graph...
+2021-07-02 00:38:08,197:DEBUG:Graph not updated...
+2021-07-02 00:38:08,197:DEBUG:Graph not updated...
+2021-07-02 00:39:27,738:DEBUG:Updating graph...
+2021-07-02 00:39:27,818:DEBUG:Graph not updated...
+2021-07-02 00:39:27,823:DEBUG:Graph not updated...
