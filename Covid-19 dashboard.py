@@ -188,7 +188,7 @@ app.layout = dbc.Container(children = [
                 dbc.Col(metric_dropdown(), width={'size': 6, "offset": 1})
                 ]),
         dbc.Row(children = [
-                dbc.Col(table_selection(), width = dict(size = 3, offset = -1),
+                dbc.Col(table_selection(), width = dict(size = 3, offset = -1)),
                 dbc.Col([graph(),dbc.Row(children = [
                                                      dbc.Col(html.Label('Select Moving Average Window')),
                                                      dbc.Col(dcc.Slider(id = 'slider1',
