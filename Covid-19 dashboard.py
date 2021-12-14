@@ -207,7 +207,7 @@ app.layout = dbc.Container(children = [
                                          )
                          ], width = 6
                         )
-                             ], no_gutters=True
+                             ] # no_gutters=True
                 )
         ], fluid = True, style={'backgroundColor': '#F2DFCE'}
         )
