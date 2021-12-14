@@ -10,4 +10,5 @@ conda install -c conda-forge dash-bootstrap-components
 In Jupyter:
 
 !pip install plotly
+
 !pip install dash-bootstrap-components
