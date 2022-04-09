@@ -2,7 +2,9 @@
 
 Covid-19 dashboard with Dash
 
-Please ensure the following packages are installed in Python Anaconda Prompt before running the code!
+Please ensure the following packages are installed before running the code!
+
+In Python Anaconda Prompt:
 
 ``conda install pandas``
 
