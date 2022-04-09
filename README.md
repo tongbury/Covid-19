@@ -1,4 +1,5 @@
-# Covid-19
+# Covid-19 Explorer
+
 Covid-19 dashboard with Dash
 
 Please ensure the following packages are installed in Python Anaconda Prompt before running the code!
