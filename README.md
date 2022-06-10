@@ -1,6 +1,6 @@
 # COVID-19 Explorer
 
-Covid-19 dashboard with Dash
+COVID-19 dashboard with Dash
 
 Please ensure the following packages are installed before running the code!
 
