@@ -1,6 +1,6 @@
 # COVID-19 Explorer
 
-COVID-19 countries dashboard (Confirmed, Death, and Recovered) with Dash
+COVID-19 countries dashboard (Confirmed, Death, and Recovered) with Plotly and Dash
 
 Source: JHU CSSE COVID-19 Dataset
 
